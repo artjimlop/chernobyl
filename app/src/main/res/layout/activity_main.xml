@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".view.MainActivity">
+
+    <Button android:id="@+id/button_throw_exception"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Throw exception"/>
+
+    <Button android:id="@+id/button_throw_exception_50_probability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_throw_exception"
+        android:text="Throw exception with 50% probability"/>
+
+    <Button android:id="@+id/button_throw_custom_exception"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_throw_exception_50_probability"
+        android:text="Throw custom exception"/>
+
+    <Button android:id="@+id/button_nuke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_throw_custom_exception"
+        android:text="Just nuke!"/>
+
+</RelativeLayout>

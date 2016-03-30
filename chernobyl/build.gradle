@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply plugin: 'com.novoda.bintray-release'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.novoda:bintray-release:0.3.4'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+publish {
+    userOrg = 'artjimlop'
+    groupId = 'com.artjimlop'
+    artifactId = 'chernobyl'
+    publishVersion = '0.0.1'
+    desc = 'Crash fast library for Android and Java'
+    website = 'https://github.com/artjimlop/chernobyl'
+}

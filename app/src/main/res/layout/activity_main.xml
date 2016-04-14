@@ -14,22 +14,4 @@
         android:layout_height="wrap_content"
         android:text="Throw exception"/>
 
-    <Button android:id="@+id/button_throw_exception_50_probability"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/button_throw_exception"
-        android:text="Throw exception with 50% probability"/>
-
-    <Button android:id="@+id/button_throw_custom_exception"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/button_throw_exception_50_probability"
-        android:text="Throw custom exception"/>
-
-    <Button android:id="@+id/button_nuke"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/button_throw_custom_exception"
-        android:text="Just nuke!"/>
-
 </RelativeLayout>

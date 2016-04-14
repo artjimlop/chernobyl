@@ -1,19 +1,38 @@
 # chernobyl
 Crash fast library for Android
 
-Tired of having a crash-free application? Now you have Chernobyl! With this library, you can have crashes wherever you want :)
-
-Just joking, if you want to try really quick the behavior when some exception is thrown at any point of your code, use this. 
+Simple precondition library for crashing in case you find unexpected values. For example: After you login against a certain API, you have to get back your user. It's completly necessary to have a no null user, so you can checkNotNull(receivedUser). Antoher example: a user must have an email, so you can checkNotEmpty(user.getEmail()).  
  
 The sample
 ----------
 
 ```java
 
-Chernobyl.nuke(new RuntimeException()); // Trow the exception you want,
-Chernobyl.nuke(new IllegalArgumentException(), PROBABILITY); // Throw an exception with a certain probability,
-Chernobyl.nuke(new PrypiatException()); // Throw custom exceptions,
-Chernobyl.nuke(); // Just throw an exception.
+checkArgument(1 == 0, "Not equal arguments");
+
+checkArgument(1 == 1, "Equal arguments");
+
+checkState(false, "State is FALSE");
+
+checkState(1 == 1, "State is TRUE");
+
+checkNotNull(null);
+
+checkNotNull(5);
+
+checkElementIndex(5, 4, "index > size");
+
+checkElementIndex(5, 5, "index == size");
+
+checkElementIndex(4, 5, "index < size");
+
+checkNotEmpty("");
+
+checkNotEmpty("string");
+
+checkNotEmpty(Collections.emptyList());
+
+checkNotEmpty(Collections.singletonList("element"));
 
 ```
 
@@ -21,14 +40,14 @@ Chernobyl.nuke(); // Just throw an exception.
 
 * Grab via Gradle:
 ```groovy
-compile 'com.artjimlop:chernobyl:0.0.1'
+compile 'com.artjimlop:chernobyl:1.0.0'
 ```
 * Grab via Maven:
 ```xml
 <dependency>
   <groupId>com.artjimlop</groupId>
   <artifactId>chernobyl</artifactId>
-  <version>0.0.1</version>
+  <version>1.0.0</version>
   <type>pom</type>
 </dependency>
 ```

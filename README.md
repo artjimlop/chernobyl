@@ -6,6 +6,8 @@ Simple precondition library for crashing in case you find unexpected values. For
 The sample
 ----------
 
+Explanations are optional in the methods!
+
 ```java
 
 checkArgument(1 == 0, "Not equal arguments");

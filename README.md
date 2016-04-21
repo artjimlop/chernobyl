@@ -1,3 +1,5 @@
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-chernobyl-green.svg?style=true)](https://android-arsenal.com/details/1/3442)
+
 # chernobyl
 Crash fast library for Android
 

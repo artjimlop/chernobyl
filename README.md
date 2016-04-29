@@ -44,14 +44,14 @@ checkNotEmpty(Collections.singletonList("element"));
 
 * Grab via Gradle:
 ```groovy
-compile 'com.artjimlop:chernobyl:1.0.0'
+compile 'com.artjimlop:chernobyl:1.1.0'
 ```
 * Grab via Maven:
 ```xml
 <dependency>
   <groupId>com.artjimlop</groupId>
   <artifactId>chernobyl</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
   <type>pom</type>
 </dependency>
 ```

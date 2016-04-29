@@ -1,6 +1,7 @@
+[![Build Status](https://travis-ci.org/artjimlop/chernobyl.svg?branch=master)](https://travis-ci.org/artjimlop/chernobyl)
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-chernobyl-green.svg?style=true)](https://android-arsenal.com/details/1/3442)
 
-# chernobyl
+# Chernobyl
 Crash fast library for Android
 
 Simple precondition library for crashing in case you find unexpected values. For example: After you login against a certain API, you have to get back your user. It's completly necessary to have a no null user, so you can checkNotNull(receivedUser). Antoher example: a user must have an email, so you can checkNotEmpty(user.getEmail()).  
